@@ -872,11 +872,34 @@ export const calculateOffline = (forceTime = 0) => {
     
     document.getElementById('progressbardescription').textContent = 'You have gained the following from offline progression!'
 
-    //200 simulated all ticks [June 18, 2021]
+//200 simulated all ticks [June 18, 2021]
     function antSimulator() {
         G['timeMultiplier'] = calculateTimeAcceleration();
-        calculateObtainium();
-        resourceGain(timeAdd/200 * G['timeMultiplier']);
+        calculateObtainium(); 
+        
+        resourceGain(timeTick * G['timeMultiplier']);
+
+        //Reset Stuff lmao!
+        addTimers('prestige', timeTick);
+        addTimers('transcension', timeTick);
+        addTimers('reincarnation', timeTick);
+        addTimers('ascension', timeTick);
+        addTimers('quarks', timeTick);
+     
+        //Auto Obtainium Stuff
+         if (player.researches[61] > 0 && player.currentChallenge.ascension !== 14)
+          automaticTools('addObtainium', timeTick);
+
+        //Auto Ant Sacrifice Stuff
+        if (player.achievements[173] > 0)
+            automaticTools('antSacrifice', timeTick);
+
+        //Auto Offerings
+        automaticTools('addOfferings', timeTick);
+        //Auto Rune Sacrifice Stuff
+        if (player.shopUpgrades.offeringAuto > 0 && player.autoSacrificeToggle)
+            automaticTools('runeSacrifice', timeTick);
+        
         if (antTicks % 5 === 1) // 196, 191, ... , 6, 1 ticks remaining
             updateAll();
 
