@@ -451,7 +451,7 @@ export const areward = (i: number): string => {
         180: "Unlock Tier 6 Ant autobuy, and autobuy Hic and Experientia ants! Add +1% Base Ant ELO.",
         181: "Unlock Tier 7 Ant autobuy, and autobuy Praemoenio ants! Add +2% Base Ant ELO.",
         182: "Unlock Tier 8 Ant autobuy, and autobuy Scientia and Phylacterium ants! Add +3% Base Ant ELO.",
-        187: `Gain an Ascension count multiplier based on your score: x${format(Math.log(metaData[3]) / Math.log(10) - 1), 2)}. Also: Offerings +${format(Math.min(100, player.ascensionCount / 10000), 2)}% [Max: 100% at 1M Ascensions]`,
+        187: `Gain an Ascension count multiplier based on your score: x${format(Math.log(metaData[3]) / Math.log(10) - 1)), 2)}. Also: Offerings +${format(Math.min(100, player.ascensionCount / 10000), 2)}% [Max: 100% at 1M Ascensions]`,
         188: `Gain +100 ascension count for all ascensions longer than 10 seconds. Also: Obtainium +${format(Math.min(100, player.ascensionCount / 50000), 2)}% [Max: 100% at 5M Ascensions]`,
         189: `Gain 20% of excess time after 10 seconds each Ascension as a linear multiplier to ascension count. Also: Cubes +${format(Math.min(200, player.ascensionCount / 2.5e6), 2)}% [Max: 200% at 500M Ascensions]`,
         193: `Gain ${format(Decimal.log(player.ascendShards.add(1), 10) / 4, 2)}% more Cubes on ascension!`,
