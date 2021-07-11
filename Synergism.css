@@ -1555,7 +1555,7 @@ nav li:hover {
 }
 
 #researchDetails > p {
-    width: 750px;
+    width: 850px;
     margin: auto;
 }
 
@@ -1684,17 +1684,6 @@ nav li:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-
-#timeWarp {
-    width: auto;
-    height: 30px;
-    border: 6px solid gold;
-}
-#forceDayReset{
-    width: auto;
-    height: 30px;
-    border: 6px solid orange;
 }
 
 #quarkamount {
@@ -2763,39 +2752,19 @@ header #obtainiumDisplay {
 }
 
 #ascensionStats {
-    grid-column: stat-image / end;
-    grid-row: asc-stats;
     display: flex;
-    flex-flow: row;
-    flex-direction: row;
-    justify-content: center;
+    gap: 10px;
     padding-top: 10px;
     margin-bottom: 15px;
-    height: 20px;
     line-height: 20px;
+    width: 60%;
+    justify-content: space-evenly;
 }
 
 #ascensionStats > span {
     display: flex;
+    white-space: pre;
     align-items: center;
-}
-
-#ascHyperStats,
-#ascPlatonicStats,
-#ascTessStats {
-    width: 10em;
-}
-
-#ascTimeTakenStats {
-    min-width: 8em;
-}
-
-#ascCubeStats {
-    width: 12em;
-}
-
-#ascC10CompletionsStats {
-    width: 3.5em;
 }
 
 #ascensionStats img {
@@ -2828,8 +2797,16 @@ header #obtainiumDisplay {
     color: lightgoldenrodyellow;
 }
 
+#ascHepteract {
+    color: pink;
+}
+
 #ascTimeAccel {
     color: royalblue;
+}
+
+#ascAscensionTimeAccel {
+    color: orange;
 }
 
 #tabBorder {
@@ -2957,6 +2934,10 @@ header #obtainiumDisplay {
     margin-top: 2px;
 }
 
+#hotKeyDesc {
+    margin: 0;
+}
+
 #hotkeyTooltip {
     color: darkorchid;
 }
@@ -2979,4 +2960,11 @@ header #obtainiumDisplay {
 #saveString {
     max-width: 50vh;
     word-wrap: break-word;
+}
+
+#currentBonus {
+    color: springgreen;
+
+    /* Remove padding */
+    margin: 0;
 }
