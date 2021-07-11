@@ -856,7 +856,7 @@ export const calculateOffline = (forceTime = 0) => {
         G['timeMultiplier'] = calculateTimeAcceleration();
         calculateObtainium();
         
-        resourceGain(timeAdd/200 * G['timeMultiplier']);
+        resourceGain(timeAdd/50 * G['timeMultiplier']);
         
         //Reset Stuff lmao!
         addTimers('prestige', timeAdd);
