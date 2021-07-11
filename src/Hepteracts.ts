@@ -251,56 +251,56 @@ export const hepteractDescriptions = (type: hepteractTypes) => {
             unlockedText.textContent = (player.hepteractCrafts.chronos.UNLOCKED) ? "< UNLOCKED >": "< LOCKED >"
             effectText.textContent = "This hepteract bends time, in your favor. +0.06% Ascension Speed per Chronos Hepteract."
             currentEffectText.textContent = "Current Effect: Ascension Speed +" + format(hepteractEffective('chronos') * 6 / 100, 2, true) + "%"
-            balanceText.textContent = "Inventory: " + format(player.hepteractCrafts.chronos.BAL, true) + " / " + format(player.hepteractCrafts.chronos.CAP)
+            balanceText.textContent = + format(player.hepteractCrafts.chronos.BAL, true) + " / " + format(player.hepteractCrafts.chronos.CAP)
             costText.textContent = "One of these will cost you " + format(player.hepteractCrafts.chronos.HEPTERACT_CONVERSION, 0, true) + " Hepteracts and 1e115 Obtainium [WIP]"
             break;
         case 'hyperrealism':
             unlockedText.textContent = (player.hepteractCrafts.hyperrealism.UNLOCKED) ? "< UNLOCKED >": "< LOCKED >"
             effectText.textContent = "This bad boy can make hypercube gain skyrocket. +0.06% Hypercubes per Hyperreal Hepteract."
             currentEffectText.textContent = "Current Effect: Hypercubes +" + format(hepteractEffective('hyperrealism') * 6 / 100, 2, true) + "%"
-            balanceText.textContent = "Inventory: " + format(player.hepteractCrafts.hyperrealism.BAL, true) + " / " + format(player.hepteractCrafts.hyperrealism.CAP)
+            balanceText.textContent = + format(player.hepteractCrafts.hyperrealism.BAL, true) + " / " + format(player.hepteractCrafts.hyperrealism.CAP)
             costText.textContent = "One of these will cost you " + format(player.hepteractCrafts.hyperrealism.HEPTERACT_CONVERSION, 0, true) + " Hepteracts and 1e80 Offerings."
             break;
         case 'quark':
             unlockedText.textContent = (player.hepteractCrafts.quark.UNLOCKED) ? "< UNLOCKED >": "< LOCKED >"
             effectText.textContent = "One pound, two pound fish, fishy grant +0.05% Quarks per Quark Hepteract fish fish."
             currentEffectText.textContent = "Current Effect: Quarks +" + format(hepteractEffective('quark') * 5 / 100, 2, true) + "%"
-            balanceText.textContent = "Inventory: " + format(player.hepteractCrafts.quark.BAL, true) + " / " + format(player.hepteractCrafts.quark.CAP)
+            balanceText.textContent = + format(player.hepteractCrafts.quark.BAL, true) + " / " + format(player.hepteractCrafts.quark.CAP)
             costText.textContent = "One of these will cost you " + format(player.hepteractCrafts.quark.HEPTERACT_CONVERSION, 0, true) + " Hepteracts and 100 Quarks."
             break;
         case 'challenge':
             unlockedText.textContent = (player.hepteractCrafts.challenge.UNLOCKED) ? "< UNLOCKED >": "< LOCKED >"
             effectText.textContent = "That's preposterous. How are you going to gain +0.05% C15 Exponent per Challenge Hepteract? How!?"
             currentEffectText.textContent = "Current Effect: C15 Exponent +" + format(hepteractEffective('challenge') * 5 / 100, 2, true) + "%"
-            balanceText.textContent = "Inventory: " + format(player.hepteractCrafts.challenge.BAL, true) + " / " + format(player.hepteractCrafts.challenge.CAP)
+            balanceText.textContent = + format(player.hepteractCrafts.challenge.BAL, true) + " / " + format(player.hepteractCrafts.challenge.CAP)
             costText.textContent = "One of these will cost you " + format(player.hepteractCrafts.challenge.HEPTERACT_CONVERSION, 0, true) + " Hepteracts, 1e11 Platonic Cubes and 1e22 Cubes."
             break;
         case 'abyss':
             unlockedText.textContent = (player.hepteractCrafts.abyss.UNLOCKED) ? "< UNLOCKED >": "< LOCKED >"
             effectText.textContent = "It seems like this holds the power to be at the End of Time. Do you remember why you need this?"
             currentEffectText.textContent = "<[You will submit to the Omega Entity of Time]>"
-            balanceText.textContent = "Inventory: " + format(player.hepteractCrafts.abyss.BAL, true) + " / " + format(player.hepteractCrafts.abyss.CAP)
+            balanceText.textContent = + format(player.hepteractCrafts.abyss.BAL, true) + " / " + format(player.hepteractCrafts.abyss.CAP)
             costText.textContent = "One of these will cost you " + format(player.hepteractCrafts.abyss.HEPTERACT_CONVERSION, 0, true) + " Hepteracts and 69 Wow! Cubes (lol)"
             break;
         case 'accelerator':
             unlockedText.textContent = (player.hepteractCrafts.accelerator.UNLOCKED) ? "< UNLOCKED >": "< LOCKED >"
             effectText.textContent = "Haha, stupid Corruptions. +2,000 +0.03% Uncorruptable Accelerators per 'Way too many accelerators' Hepteract!"
             currentEffectText.textContent = "Current Effect: Uncorruptable Accelerators +"+ format(2000 * hepteractEffective('accelerator'), 2, true) +" +" + format(hepteractEffective('accelerator') * 3 / 100, 2, true) + "%"
-            balanceText.textContent = "Inventory: " + format(player.hepteractCrafts.accelerator.BAL, true) + " / " + format(player.hepteractCrafts.accelerator.CAP)
+            balanceText.textContent = + format(player.hepteractCrafts.accelerator.BAL, true) + " / " + format(player.hepteractCrafts.accelerator.CAP)
             costText.textContent = "One of these will cost you " + format(player.hepteractCrafts.accelerator.HEPTERACT_CONVERSION, 0, true) + " Hepteracts and 1e14 Wow! Tesseracts"
             break;
         case 'acceleratorBoost':
             unlockedText.textContent = (player.hepteractCrafts.acceleratorBoost.UNLOCKED) ? "< UNLOCKED >": "< LOCKED >"
             effectText.textContent = "Haha, stupid Corruptions. +0.1% Accelerator Boosts per 'Way too many accelerator boosts' Hepteract!"
             currentEffectText.textContent = "Current Effect: Accelerator Boosts +" +format(hepteractEffective('acceleratorBoost') / 10, 2, true) + "%"
-            balanceText.textContent = "Inventory: " + format(player.hepteractCrafts.acceleratorBoost.BAL, true) + " / " + format(player.hepteractCrafts.acceleratorBoost.CAP)
+            balanceText.textContent = + format(player.hepteractCrafts.acceleratorBoost.BAL, true) + " / " + format(player.hepteractCrafts.acceleratorBoost.CAP)
             costText.textContent = "One of these will cost you " + format(player.hepteractCrafts.acceleratorBoost.HEPTERACT_CONVERSION, 0, true) + " Hepteracts and 1e10 Hypercubes"
             break;
         case 'multiplier':
             unlockedText.textContent = (player.hepteractCrafts.multiplier.UNLOCKED) ? "< UNLOCKED >": "< LOCKED >"
             effectText.textContent = "Haha, stupid Corruptions. +1,000 +0.03% Uncorruptable Multipliers per 'Way too many multipliers' Hepteract!"
             currentEffectText.textContent = "Current Effect: Uncorruptable Multipliers +" + format(1000 * hepteractEffective('multiplier'), 2, true) +" +" + format(hepteractEffective('multiplier') * 3 / 100, 2, true) + "%"
-            balanceText.textContent = "Inventory: " + format(player.hepteractCrafts.multiplier.BAL, true) + " / " + format(player.hepteractCrafts.multiplier.CAP)
+            balanceText.textContent = + format(player.hepteractCrafts.multiplier.BAL, true) + " / " + format(player.hepteractCrafts.multiplier.CAP)
             costText.textContent = "One of these will cost you " + format(player.hepteractCrafts.multiplier.HEPTERACT_CONVERSION, 0, true) + " Hepteracts and 1e130 Obtainium"
             break;
     }
