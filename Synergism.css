@@ -2878,9 +2878,9 @@ header #obtainiumDisplay {
 
 #hepteractGrid {
     display: grid;
-    grid-template-columns: repeat(4, minmax(70px, 105px));
+    grid-template-columns: repeat(4, minmax(150px, 105px));
     margin-top: 10px;
-    width: calc(105px * 4);
+    width: calc(150px * 4);
     border: 3px solid plum;
     grid-column: shop 2/4;
     grid-row: 1;
