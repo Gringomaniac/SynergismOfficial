@@ -851,40 +851,31 @@ export const calculateOffline = (forceTime = 0) => {
     
     document.getElementById('progressbardescription').textContent = 'You have gained the following from offline progression!'
 
+        //Auto Obtainium Stuff
+    if (player.researches[61] > 0 && player.currentChallenge.ascension !== 14)
+        automaticTools('addObtainium', timeAdd);
+
+    //Auto Ant Sacrifice Stuff
+    if (player.achievements[173] > 0)
+        automaticTools('antSacrifice', timeAdd);
+
+    //Auto Offerings
+    automaticTools('addOfferings', timeAdd);
+    //Auto Rune Sacrifice Stuff
+    if (player.shopUpgrades.offeringAuto > 0 && player.autoSacrificeToggle)
+        automaticTools('runeSacrifice', timeAdd);
+    
+    document.getElementById('progressbardescription').textContent = 'You have gained the following from offline progression!'
+
     //200 simulated all ticks [June 18, 2021]
     function antSimulator() {
         G['timeMultiplier'] = calculateTimeAcceleration();
         calculateObtainium();
-        
         resourceGain(timeAdd/200 * G['timeMultiplier']);
-        
-        //Reset Stuff lmao!
-        addTimers('prestige', timeAdd);
-        addTimers('transcension', timeAdd);
-        addTimers('reincarnation', timeAdd);
-        addTimers('ascension', timeAdd);
-        addTimers('quarks', timeAdd);
-        
-        //Auto Obtainium Stuff
-        if (player.researches[61] > 0 && player.currentChallenge.ascension !== 14)
-            automaticTools('addObtainium', timeAdd);
-        
-       //Auto Ant Sacrifice Stuff
-       if (player.achievements[173] > 0)
-          automaticTools('antSacrifice', timeAdd);
-        
-        //Auto Offerings
-        automaticTools('addOfferings', timeAdd);
-        
-        //Auto Rune Sacrifice Stuff
-        if (player.shopUpgrades.offeringAuto > 0 && player.autoSacrificeToggle)
-            automaticTools('runeSacrifice', timeAdd);
-        
         if (antTicks % 5 === 1) // 196, 191, ... , 6, 1 ticks remaining
             updateAll();
 
         antTicks -= 1;
-        
         //Misc functions
         if (antTicks < 1) {
             clearInt(runOffline);
