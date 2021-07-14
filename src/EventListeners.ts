@@ -456,7 +456,15 @@ for (let index = 0; index < platonicUpgrades.length; index++) {
 }
 
 //Part 4: Hepteract Subtab
-
+document.getElementById('chronosHepteract').addEventListener('mouseover', () => hepteractDescriptions('chronos'))
+document.getElementById('hyperrealismHepteract').addEventListener('mouseover', () => hepteractDescriptions('hyperrealism'))
+document.getElementById('quarkHepteract').addEventListener('mouseover', () => hepteractDescriptions('quark'))
+document.getElementById('challengeHepteract').addEventListener('mouseover', () => hepteractDescriptions('challenge'))
+document.getElementById('abyssHepteract').addEventListener('mouseover', () => hepteractDescriptions('abyss'))
+document.getElementById('acceleratorHepteract').addEventListener('mouseover', () => hepteractDescriptions('accelerator'))
+document.getElementById('acceleratorBoostHepteract').addEventListener('mouseover', () => hepteractDescriptions('acceleratorBoost'))
+document.getElementById('multiplierHepteract').addEventListener('mouseover', () => hepteractDescriptions('multiplier'))
+    
 document.getElementById('chronosHepteractCraft').addEventListener('click', () => player.hepteractCrafts.chronos.craft())
 document.getElementById('hyperrealismHepteractCraft').addEventListener('click', () => player.hepteractCrafts.hyperrealism.craft())
 document.getElementById('quarkHepteractCraft').addEventListener('click', () => player.hepteractCrafts.quark.craft())
